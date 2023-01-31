@@ -20,8 +20,13 @@ device atm.
 
 # Usage
 ```
-bash batch_convert_wmv_audio.sh $(path to the folder with wmv files)
+bash batch_convert_wmv_audio.sh $(path to the folder with wmv files) $(extension) $(samplerate) $(backup_folder) 
 ```
+
+$extension: default is `wmv` if not specified
+$samplerate: default is `48000` if not specified
+$backup_folder: default is `_original` if not specified
+
 
 The script would do the following:
 1. Create a `wmvbk` folder in the target folder
@@ -36,8 +41,8 @@ The script would do the following:
 ## 999020 - Mega Man Zero/ZX Legacy Collection
 Tested with `GE-Proton7-43` on Steam Deck.
 ```sh
-bash batch_convert_wmv_audio.sh ~/.local/share/Steam/steamapps/common/MZZXLC/nativePCx64/RZZC/ZX/DATA/vx/
-bash batch_convert_wmv_audio.sh ~/.local/share/Steam/steamapps/common/MZZXLC/nativePCx64/RZZC/ZXA/DATA/vx/
+bash batch_convert_movie_audio.sh ~/.local/share/Steam/steamapps/common/MZZXLC/nativePCx64/RZZC/ZX/DATA/vx/
+bash batch_convert_movie_audio.sh ~/.local/share/Steam/steamapps/common/MZZXLC/nativePCx64/RZZC/ZXA/DATA/vx/
 ```
 
 # Future improvements
